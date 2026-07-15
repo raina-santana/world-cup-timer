@@ -17,10 +17,6 @@ const flagB = document.getElementById("flagB");
 
 let intervalo;
 
-// ===== FONTE ÚNICA DE VERDADE =====
-// nome do time -> caminho da bandeira
-// (os <option> dos selects são gerados a partir daqui, então
-// não existe mais risco de os nomes ficarem diferentes entre HTML e JS)
 const bandeiras = {
   "Argélia": "assets/flags/argelia.png",
   "Argentina": "assets/flags/argentina.png",
@@ -84,7 +80,6 @@ function popularSelectsDeTimes() {
     });
   });
 
-  // valores iniciais (equivalentes ao que estava fixo no HTML original)
   selectTeamA.value = "Brasil";
   selectTeamB.value = "Argentina";
 }
@@ -162,7 +157,7 @@ btnAtualizar.addEventListener("click", () => {
   }, 1000);
 });
 
-// entra em modo transmissão
+// modo transmissão
 btnTelaCheia.addEventListener("click", async () => {
   document.body.classList.add("modo-transmissao");
 
