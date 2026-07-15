@@ -22,7 +22,7 @@ Interactive countdown and broadcast timer inspired by FIFA World Cup TV graphics
 
 ## Live Demo
 
-()
+https://github.com/raina-santana/world-cup-timer/
 
 ## Author
 
