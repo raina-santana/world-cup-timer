@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timer Copa 2026</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="container">
+    <h1>Copa do Mundo Fifa 2026</h1>
+    <h2>Próxima transmissão</h2>
+
+    <p id="phase">Final</p>
+
+    <div class="areaTimes">
+        <div class="timeBox">
+            <img id="flagA" src="assets/flags/default.png" alt="Bandeira do Time A">
+            <span id="teamA">Brasil</span>
+        </div>
+
+        <span class="versus">x</span>
+
+        <div class="timeBox">
+            <img id="flagB" src="assets/flags/default.png" alt="Bandeira do Time B">
+            <span id="teamB">Argentina</span>
+        </div>
+    </div>
+
+    <div class="dataHora">
+      <p id="countdown">Hoje • 16:00</p>
+    </div>
+
+    <p id="timer">00:00:00</p>
+  </main>
+
+  <section class="painelControle">
+    <label class="sr-only" for="selectTeamA">Time A</label>
+    <select id="selectTeamA"></select>
+
+    <label class="sr-only" for="selectTeamB">Time B</label>
+    <select id="selectTeamB"></select>
+
+    <label class="sr-only" for="selectPhase">Fase da disputa</label>
+    <select id="selectPhase">
+      <option>Fase de grupos</option>
+      <option>16 avos</option>
+      <option>Oitavas</option>
+      <option>Quartas</option>
+      <option>Semifinal</option>
+      <option>Disputa de 3º lugar</option>
+      <option>Final</option>
+    </select>
+
+    <label class="sr-only" for="data">Data do jogo</label>
+    <input type="date" id="data">
+
+    <label class="sr-only" for="hora">Horário do jogo</label>
+    <input type="time" id="hora">
+
+    <button id="btnAtualizar">Atualizar</button>
+  </section>
+
+  <p id="avisoData" class="avisoData oculto">Escolha uma data e horário no futuro.</p>
+
+  <button id="btnTelaCheia" class="btnTelaCheia oculto">
+    Entrar em modo transmissão
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
